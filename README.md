@@ -67,7 +67,7 @@ You take the server offline temporarily so that the machine can recover and retu
 | red   | 140 | 25.981978  | 203.0.113.0  | 192.0.2.1    | TCP      | 54770->443 [SYN] Seq=0 Win=5792 Len=0...      |
 
 ## DETAILED ANALYSIS
-#### Part One: Identification of the Attack
+### Part One: Identification of the Attack
 
 **Type of Attack:**
 The analysis of the given tcp/http log data from Wireshark indicates a **SYN Flood Attack**, a type of Denial of Service (DoS) attack.
@@ -87,7 +87,7 @@ Network attacks are malicious activities aimed at disrupting, damaging, or gaini
 - The website is taking a long time to load and reporting a connection timeout error.
 - These symptoms are typical of a DoS attack, where the server is overwhelmed by the volume of SYN packets.
 
-#### Part Two: Explanation of the Attack's Impact
+### Part Two: Explanation of the Attack's Impact
 
 **Description of the Attack:**
 A SYN Flood Attack involves sending a large number of SYN requests to a target server, causing it to allocate resources for half-open connections and eventually exhaust its ability to handle legitimate connections.
@@ -115,7 +115,7 @@ A SYN Flood Attack involves sending a large number of SYN requests to a target s
 - **Firewall Rules:** Configure firewalls to detect and block SYN flood attacks.
 - **DDoS Protection Services:** Employ services that specialize in mitigating DDoS attacks.
 
-#### Part Three: Detailed Elaboration
+### Part Three: Detailed Elaboration
 
 **Name of the Network Intrusion Attack:**
 - **SYN Flood Attack**
@@ -139,11 +139,11 @@ The logs point to a SYN Flood Attack, a type of DoS attack causing significant d
 ## REPORT
 ### Analyze Network Attacks
 
-#### Section 1: Identify the Type of Attack That May Have Caused This Network Interruption
+### Section 1: Identify the Type of Attack That May Have Caused This Network Interruption
 
 One potential explanation for the website’s connection timeout error message is a DoS attack. The logs show that the web server stops responding after it is overloaded with SYN packet requests. This event could be a type of DoS attack called SYN flooding.
 
-#### Section 2: Explain How the Attack is Causing the Website Malfunction
+### Section 2: Explain How the Attack is Causing the Website Malfunction
 
 When the website visitors try to establish a connection with the web server, a three-way handshake occurs using the TCP protocol. The handshake consists of three steps:
 
